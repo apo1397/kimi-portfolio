@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apoorv Abhishek - Product Manager with AI expertise and cloud kitchen adventures">
+    <title>Apoorv's Quest for Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/framer-motion@6.3.13/dist/framer-motion.cjs.js"></script>
+    <style>
+        .gradient-background {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            animation: gradientShift 15s ease infinite;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .particle {
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            animation: float 10s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .experience-line {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            height: 3px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-100 to-blue-100">
+    <!-- Animated Gradient Hero -->
+    <section class="relative h-screen overflow-hidden" id="home">
+        <div class="absolute inset-0 gradient-background opacity-20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-purple-600 to-blue-600 opacity-10"></div>
+        <div class="container relative mx-auto px-4 py-32 text-center">
+            <h1 class="text-8xl font-bold text-white mb-8 animate-fadeInUp">Apoorv Abhishek</h1>
+            <p class="text-4xl text-white mb-12 animate-fadeInUp">Product Manager & Cloud Kitchen Alchemist</p>
+            <div class="flex justify-center space-x-4">
+                <button class="px-8 py-3 bg-white text-purple-600 font-semibold rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 clickable" onclick="showContactOptions()">Start Quest</button>
+            </div>
+            <div class="mt-12 space-y-6">
+                <div class="flex justify-center space-x-8 text-white text-xl">
+                    <div class="pulse clickable">🚀</div>
+                    <div class="pulse clickable">🤖</div>
+                    <div class="pulse clickable">🍔</div>
+                </div>
+            </div>
+            <!-- Floating Particles -->
+            <div class="absolute bottom-0 left-0 w-full h-full">
+                <div class="particle absolute left-1/2 transform -translate-x-1/2 animate-float"></div>
+                <div class="particle absolute right-0 top-24 transform translate-x-1/2 animate-float"></div>
+                <div class="particle absolute left-1/4 top-48 animate-float"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Animated Background -->
+    <section class="py-20 bg-gradient-to-br from-purple-50 to-blue-50" id="skills">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-16">My Arsenal</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-center">
+                <div class="skill-card relative w-32 h-32 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full p-6 text-white cursor-pointer hover:rotate-6 transition-transform duration-300 hover:shadow-xl clickable">
+                    <div class="absolute inset-0 bg-white opacity-10 rounded-full"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold mb-2">AI/LLMs</h3>
+                        <p class="text-sm">ChatGPT • Qwen • Falcon 7B</p>
+                    </div>
+                </div>
+                <div class="skill-card relative w-32 h-32 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full p-6 text-white cursor-pointer hover:rotate-6 transition-transform duration-300 hover:shadow-xl clickable">
+                    <div class="absolute inset-0 bg-white opacity-10 rounded-full"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold mb-2">Data & Analytics</h3>
+                        <p class="text-sm">Mixpanel • Metabase • Google Analytics</p>
+                    </div>
+                </div>
+                <div class="skill-card relative w-32 h-32 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full p-6 text-white cursor-pointer hover:rotate-6 transition-transform duration-300 hover:shadow-xl clickable">
+                    <div class="absolute inset-0 bg-white opacity-10 rounded-full"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold mb-2">Product Tools</h3>
+                        <p class="text-sm">JIRA • Figma • Notion</p>
+                    </div>
+                </div>
+                <div class="skill-card relative w-32 h-32 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full p-6 text-white cursor-pointer hover:rotate-6 transition-transform duration-300 hover:shadow-xl clickable">
+                    <div class="absolute inset-0 bg-white opacity-10 rounded-full"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold mb-2">Backend</h3>
+                        <p class="text-sm">Java • Python • JavaScript</p>
+                    </div>
+                </div>
+                <div class="skill-card relative w-32 h-32 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full p-6 text-white cursor-pointer hover:rotate-6 transition-transform duration-300 hover:shadow-xl clickable">
+                    <div class="absolute inset-0 bg-white opacity-10 rounded-full"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold mb-2">Databases</h3>
+                        <p class="text-sm">SQL • MongoDB • ElasticSearch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline with Dynamic Line -->
+    <section class="py-20 bg-gradient-to-br from-purple-100 to-blue-100" id="experience">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-16">Quest Timeline</h2>
+            <div class="relative timeline">
+                <div class="experience-line"></div>
+                <!-- Experience Cards -->
+                <div class="relative mb-12 experience-card">
+                    <div class="experience-card bg-white rounded-2xl shadow-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl clickable">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-2xl">📈</span>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold">Hypothesis</h3>
+                                <p class="text-sm text-gray-600">Mar 2023 - Present</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">Scaled product from $0 to $160K ARR<br>
+                        Built authenticated creator metrics feature in 2 days<br>
+                        Launched Brand Safety parameter with Stanford PhD</p>
+                    </div>
+                </div>
+                <div class="relative mb-12 experience-card">
+                    <div class="experience-card bg-white rounded-2xl shadow-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl clickable">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-2xl">🚀</span>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold">Meesho</h3>
+                                <p class="text-sm text-gray-600">Aug 2022 - Feb 2023</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">Boosted Add To Cart/DAU ratio by 16%<br>
+                        Launched Product Variant Discovery<br>
+                        Conducted ground visits for research</p>
+                    </div>
+                </div>
+                <div class="relative mb-12 experience-card">
+                    <div class="experience-card bg-white rounded-2xl shadow-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl clickable">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-2xl">🤖</span>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold">Cognizer AI</h3>
+                                <p class="text-sm text-gray-600">Feb 2020 - Oct 2021</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">Led Stripe integration for monetization<br>
+                        Established in-product analytics<br>
+                        Worked on Knowledge Graphs & Conversational AI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-20 bg-gradient-to-br from-purple-50 to-blue-50" id="projects">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-16">Featured Quests</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Interactive Project Cards -->
+                <div class="project-card relative rounded-2xl overflow-hidden shadow-xl cursor-pointer group clickable">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+                    <div class="relative p-6">
+                        <h3 class="text-2xl font-bold mb-2">Sauci Cloud Kitchen</h3>
+                        <p class="text-gray-700">Managing daily operations, marketing, hiring, and expansion<br>
+                        Learning harsh industry truths daily<br>
+                        Building from scratch in competitive market</p>
+                    </div>
+                    <div class="absolute bottom-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="px-4 py-2 bg-white text-purple-600 rounded-full">View Case Study</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600">Let's connect and solve problems together!</p>
+            <div class="mt-4 space-x-4">
+                <button class="px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors duration-300 clickable" onclick="showContactOptions()">Get in Touch</button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Existing JavaScript code for interactions
+        function showContactOptions() {
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center';
+            modal.innerHTML = `
+                <div class="bg-white p-8 rounded-2xl">
+                    <h2 class="text-3xl font-bold mb-6 text-purple-600 text-center">Choose Contact Method</h2>
+                    <div class="space-y-4">
+                        <button onclick="location.href='https://wa.me/+918297019465'" class="w-full px-8 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors duration-300">
+                            <svg class="w-6 h-6 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2v-6a2 2 0 012-2h2V8zm-4 4v4H7V8h2zm4-4h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v-6a2 2 0 01-2-2h-2zm-4-4a2 2 0 012-2v6a2 2 0 01-2 2h-2V8zm0 12h2a2 2 0 002-2v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2z"/>
+                            </svg> 
+                            WhatsApp
+                        </button>
+                        <button onclick="location.href='mailto:apoorvsinha1397@gmail.com'" class="w-full px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-300">
+                            <svg class="w-6 h-6 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.764L3 20h18M21 8l-7.89 5.764L21 20H3"/>
+                            </svg>
+                            Email
+                        </button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target.classList.contains('bg-black/50')) {
+                event.target.remove();
+            }
+        }
+
+        // Smooth Scroll Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
